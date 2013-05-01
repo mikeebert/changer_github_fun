@@ -9,4 +9,8 @@ describe CoinChanger do
     @changer.make_change(1).should == ["p"]
   end
 
+  it "makes change for 5" do
+    @changer.make_change(5).should == ["n"]
+  end
+
 end
