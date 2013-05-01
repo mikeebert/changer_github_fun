@@ -3,11 +3,9 @@ class CoinChanger
     coins = []
 
     if amount >= 5
-      coins << "n"
-      amount -= 5
-    end
-
-    while amount >= 1
+    	coins << "n"
+    	amount -= 5
+    else
       coins << "p"
       amount -= 1
     end
